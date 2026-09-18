@@ -61,6 +61,13 @@
   }
   nav a:hover{ color:#fff; }
   nav a:hover::after{ width:100%; }
+  nav .pdf-btn{
+    background:var(--yellow); color:var(--black); border:none; border-radius:20px; padding:8px 16px;
+    font-family:'Poppins',sans-serif; font-weight:800; font-size:11.5px; letter-spacing:.02em; cursor:pointer;
+    text-decoration:none; display:inline-block; text-transform:uppercase; flex:none;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .pdf-btn:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(228,224,48,.35); background:#fff; }
 
   /* ---------- hero ---------- */
   .hero{
@@ -359,17 +366,21 @@
 
     .attr-list div{ font-size:11px !important; }
 
-    .logo-card{ height:130px !important; }
+    #logotipo p.reveal{ margin-bottom:12px !important; }
+    .logo-grid{ margin-bottom:16px !important; }
+    .logo-card{ height:110px !important; }
     .logo-caption{ font-size:11px !important; }
 
-    .clearspace-box svg{ width:110px !important; }
-    .clearspace-box{ padding:24px !important; }
-    .cs-guide-top{ height:24px !important; }
-    .cs-guide-left{ width:24px !important; }
-    .clearspace p{ font-size:12px !important; }
+    .clearspace{ margin:14px 0 !important; }
+    .clearspace-box svg{ width:90px !important; }
+    .clearspace-box{ padding:16px !important; }
+    .cs-guide-top{ height:16px !important; }
+    .cs-guide-left{ width:16px !important; }
+    .clearspace p{ font-size:11.5px !important; }
 
-    .dd-card{ padding:18px 20px !important; }
-    .dd-card li{ font-size:12px !important; }
+    .dd-card{ padding:14px 18px !important; }
+    .dd-card li{ font-size:11.5px !important; padding:5px 0 5px 18px !important; }
+    .dd-card h4{ margin-bottom:8px !important; }
 
     .pillar-card{ min-height:150px !important; padding:22px 20px !important; }
     .pillar-icon{ width:48px !important; height:48px !important; }
@@ -463,6 +474,7 @@
     <li><a href="#aplicacoes">Aplicações</a></li>
     <li><a href="#llm">Para IA</a></li>
   </ul>
+  <a class="pdf-btn" href="javascript:window.print()">Baixar PDF</a>
 </nav>
 
 <!-- ============================================================ HERO ============================================================ -->
